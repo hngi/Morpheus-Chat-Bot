@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Input</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h2>Input Words with meaning</h2>
+    
+        <form action="input.php" method="POST">
+        <h3>Definition</br>
+        <textarea type="text" name="definition" style = "width: 300pt; height: 100pt;" placeholder="Definition of word"></textarea><br>
+        <h3>Word</br>
+        <input type="text" name="word" placeholder="Input word"><br>
+        <h3>Antonyms</br>
+        <textarea type="text" name="antonyms" style = "height: 50pt;" placeholder="Word's antonyms"></textarea><br>
+        <h3>Synonyms</br>
+        <textarea type="text" name="synonyms" style = "height: 50pt;" placeholder="Word's synonyms"></textarea><br>
+        <h3>Examples</br>
+            <textarea type="text" name="example" style = "height: 20pt;" placeholder="Other examples"></textarea><br>
+
+        <input type="submit" name="submit" value="Submit" style="background-color: green; font-size: 14pt; font-weight: bold;">
+        </form>
+    </div>
+</body>
+</html>
