@@ -76,13 +76,13 @@ $(function(){
                             '<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"></div> \n'+
                         '</div>')
 
-                    // clear input
-                    $('#text_input').val('');
-
                     // adjust element scroll position
                     messagediv.scrollTop(messagediv.prop("scrollHeight"));
                 }
-            );   
+            ); 
+            
+            // clear input
+            $('#text_input').val('');
         }
     })
 })
