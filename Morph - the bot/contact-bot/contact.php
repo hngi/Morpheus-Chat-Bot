@@ -11,14 +11,14 @@ if (isset($_POST['submit'])) {
 
     $conn = new mysqli ($servername, $dbusername, $dbpassword, $dbname);
 
-    $q = "INSERT INTO `contact-us`(`id`, `email`, `subject`, `message`) VALUES ([],[$email],[$subject],[$message])";
+    $q = "INSERT INTO `contact-us`(`id`, `email`, `subject`, `message`) VALUES ('', '$email', '$subject', '$message')";
 
         if (mysqli_query($conn, $q)) {
             echo 'Message sent.';
             header('Location: http://morph.adeolamade.com.ng/');
             exit;
         } else {
-            echo 'Please, try again.' ;
+            echo 'Please, try again.';
         }
 }
 ?>
