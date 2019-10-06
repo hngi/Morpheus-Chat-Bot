@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Morph - Contact Us</title>
+    <style>
+    .contact {
+        background-color: #F6F6F6;
+        text-align: center;
+        margin: 80pt 200pt 50pt 200pt;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: black;
+    
+    }
+    .input {
+        margin-right: 200pt;
+        width: 400pt;
+        margin-left: 100pt;
+    }
+    h1 {
+        background-color: #e0f8ea;
+        margin-top: -50pt;
+        padding-bottom: 10pt;
+        padding-top: 10pt;
+    }
+    button {
+        height: 30pt; 
+        border-radius: 16px; 
+        border: none;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px; 
+        font-weight: bold;
+        background-color: rgb(130, 245, 130);
+    }
+    h3 {
+        background-color: #42B883;
+        padding-left: 30pt;
+        margin-right: -20pt;
+        margin-left: -20pt;
+        padding-top: 8pt;
+        padding-bottom: 8pt;
+        color: white;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 26px;
+    }
+    ul {
+        list-style: none;
+        float:right; 
+        padding-right: 20pt; 
+        font-size: 20px;
+        overflow: hidden;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color: #42B883;
+    }
+    </style>
+</head>
+<body>
+        <h3><img src="https://res.cloudinary.com/gfellah45/image/upload/v1569591397/malebot_m3bxxc.png" alt="Morph Logo" align="middle">Morph
+            <span>
+                <ul>
+                    <li><a href="http://morph.adeolamade.com.ng/">Home</a></li>
+                </ul>
+            </span>
+        </h3>
+    <div class = "contact">
+        </br></br>
+        <h1>Contact Us</h1>
+        </br></br>
+        <form action="contact.php" method="POST">
+            <p style= "padding-right: 370pt">Email</br>
+            <input type="email" name="email" class="input" style="height: 25pt;" placeholder="Your email" required>
+            <p style= "padding-right: 360pt">Subject</br>
+            <input type="text" name="subject" class="input" style="height: 25pt;" placeholder="Subject of message" required>
+            <p style= "padding-right: 355pt">Message</br>
+            <textarea name="message" class="input" cols="30" rows="10" placeholder="Type your complaint or suggestion" required></textarea>
+        <br></br>
+            <button type="submit" name="submit" class="input">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
